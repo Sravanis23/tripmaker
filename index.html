@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="traveltips.html">Travel Tips</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Trip Maker - Plan Your Perfect Getaway</h1>
+        <input type="text" id="searchBar" placeholder="Search by destination..." onkeyup="filterDestinations()">
+        <div class="filters">
+            <button onclick="filterCategory('all')">All</button>
+            <button onclick="filterCategory('beach')">Beaches</button>
+            <button onclick="filterCategory('mountain')">Mountains</button>
+            <button onclick="filterCategory('desert')">Deserts</button>
+            <button onclick="filterCategory('city')">Cities</button>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <!-- Beaches -->
+        <div class="card" data-category="beach">
+            <img src="./images/maldives.jpeg" alt="Maldives Beach">
+            <h3>Maldives Beach</h3>
+        </div>
+        <div class="card" data-category="beach">
+            <img src="./images/miami.jpeg" alt="Miami Beach">
+            <h3>Miami Beach</h3>
+        </div>
+        <div class="card" data-category="beach">
+            <img src="./images/bora.jpeg" alt="Bora Bora Beach">
+            <h3>Bora Bora Beach</h3>
+        </div>
+        <div class="card" data-category="beach">
+            <img src="./images/pukhet.jpeg" alt="Phuket Beach">
+            <h3>Phuket Beach</h3>
+        </div>
+        <div class="card" data-category="beach">
+            <img src="./images/goa.jpeg" alt="Goa Beach">
+            <h3>Goa Beach</h3>
+        </div>
+    
+        <!-- Mountains -->
+        <div class="card" data-category="mountain">
+            <img src="./images/swissalps.jpeg" alt="Swiss Alps">
+            <h3>Swiss Alps</h3>
+        </div>
+        <div class="card" data-category="mountain">
+            <img src="./images/rocky.jpeg" alt="Rocky Mountains">
+            <h3>Rocky Mountains</h3>
+        </div>
+        <div class="card" data-category="mountain">
+            <img src="images/himalaya.jpeg" alt="Himalayas">
+            <h3>Himalayas</h3>
+        </div>
+        <div class="card" data-category="mountain">
+            <img src="images/fuji.jpeg" alt="Mount Fuji">
+            <h3>Mount Fuji</h3>
+        </div>
+        <div class="card" data-category="mountain">
+            <img src="images/kilimanjaro.jpeg" alt="Kilimanjaro">
+            <h3>Kilimanjaro</h3>
+        </div>
+    
+        <!-- Deserts -->
+        <div class="card" data-category="desert">
+            <img src="./images/sahara.jpeg" alt="Sahara Desert">
+            <h3>Sahara Desert</h3>
+        </div>
+        <div class="card" data-category="desert">
+            <img src="./images/arabian.jpeg" alt="Arabian Desert">
+            <h3>Arabian Desert</h3>
+        </div>
+        <div class="card" data-category="desert">
+            <img src="./images/atamaca.jpeg" alt="Atacama Desert">
+            <h3>Atacama Desert</h3>
+        </div>
+        <div class="card" data-category="desert">
+            <img src="./images/gobi.jpeg" alt="Gobi Desert">
+            <h3>Gobi Desert</h3>
+        </div>
+        <div class="card" data-category="desert">
+            <img src="./images/namib.jpeg" alt="Namib Desert">
+            <h3>Namib Desert</h3>
+        </div>
+ 
+        <!-- Cities -->
+        <div class="card" data-category="city">
+            <img src="./images/newyork.jpeg" alt="New York City">
+            <h3>New York City</h3>
+        </div>
+        <div class="card" data-category="city">
+            <img src="images/tokyo.jpeg" alt="Tokyo">
+            <h3>Tokyo</h3>
+        </div>
+        <div class="card" data-category="city">
+            <img src="images/paris.jpeg" alt="Paris">
+            <h3>Paris</h3>
+        </div>
+        <div class="card" data-category="city">
+            <img src="images/dubai.jpeg" alt="Dubai">
+            <h3>Dubai</h3>
+        </div>
+        <div class="card" data-category="city">
+            <img src="images/barcelona.jpeg" alt="Barcelona">
+            <h3>Barcelona</h3>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

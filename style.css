@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease, transform 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #4a90e2;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Contact section styling */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contactForm label {
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contactForm button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contactForm button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+/* Success message styling */
+#successMessage {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    display: none;
+}
+
+/* Style to show success message */
+#successMessage.show {
+    display: block;
+}
+
+#contact {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+header {
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+}
+
+.special-packages-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card h2 {
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.package-card p {
+    color: #666;
+    padding: 0 15px;
+}
+
+.package-card .price {
+    display: block;
+    font-weight: bold;
+    color: #4a90e2;
+    margin: 15px 0;
+}
+/* About Us page styling */
+.about-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-section p, .values-list {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.values-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+
+.values-list strong {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.team-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 150px;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Travel Tips page styling */
+
+.tips-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tip-card:hover {
+    transform: scale(1.05);
+}
+
+.tip-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #666;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.filters button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #dddddd;
+    transform: scale(1.05);
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 15px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+}
+
+.card {
+    display: inline-block;
+    width: 200px;
+    flex: 0 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Zooms in the image */
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.1em;
+}
